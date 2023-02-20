@@ -9,6 +9,7 @@ noteRouter.get("/",async(req,res)=>{
         res.send(notes)
     }
     catch(err){
+        
         res.send({"msg":"wrong credentials" , "err":err.message })
     }
 })
